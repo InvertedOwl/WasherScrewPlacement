@@ -31,6 +31,11 @@ namespace WasherScrewPlacement
                         __result = true;
                         return false;
                     }
+                    if (placementData.objectId.Contains(___AllowedIds[i]) || placementData.objectId.Contains("CLMP"))
+                    {
+                        __result = true;
+                        return false;
+                    }
                 }
                 __result = false;
                 return false;
